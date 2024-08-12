@@ -5,3 +5,150 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  /* shared styles */
+.display-flex{
+  display: flex;
+}
+
+/* FFFFFF 100% */
+.text-white{
+  color: #FFFFFF;
+}
+/* FFFFFF 60% */
+.text-light-gray{
+color: rgba(255, 255, 255, 0.6);
+}
+
+/* FFFFFF 65% */
+.text-gray{
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* FFFFFF 50% */
+.text-dark-gray{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.primary-bg{
+  background-color: rgba(17, 17, 17, 1);
+  /* background-color: rgba(119, 119, 119, 0); */
+}
+
+.btn-primary{
+  background-color: #E6533C;
+  width: 224px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  height: 54px;
+  padding: 16px 46px;
+  border: none;
+  border-radius: 46px;
+}
+
+.btn-secondary{
+  background-color: rgba(17, 17, 17, 1);
+  width: 224px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  height: 54px;
+  padding: 16px 48px;
+  border: 1px solid white;
+  border-radius: 46px;
+}
+  /* header styles */
+
+
+  /* navbar related styles */
+  .navbar, .banner{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand{
+    font-weight: 800;
+    font-size: 2.25rem;
+    font-style: italic;
+    color: #E6533C;
+  }
+  .border{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 47px;
+  }
+
+  .nav-link{
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+
+  /* .home{
+    background-color: #E6533C;
+    border: none;
+    border-radius: 46px;
+    margin: auto 47px 0px ;
+  } */
+  .navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* banner related styles */
+  .banner{
+    gap: 167px;
+  }
+  .banner-content{
+    max-width: 599px;
+    margin: auto 0;
+  }
+
+  .banner-image{
+    width: 100%;
+  }
+
+  .btn-section{
+    gap: 14px;
+    
+  }
+
+  #tutorial-badge{
+    border: none;
+    border-radius: 12px;
+    padding: 20px 23px 20px 75px;
+    font-size: 1rem;
+    color: rgba(239, 237, 232, 0.65);
+    background-color: rgba(48, 48, 48, 0.54);
+    margin-left: -100px;
+    margin-top: -60px;
+  }
+
+  #tutorial-video{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(250, 250, 249, 1);
+  }
+
+
+
+  /* responsive media query */
+  @media screen and (max-width: 576px) {
+    .navbar, .nav-links, .banner{
+      flex-direction: column;
+    }
+    .nav-links{
+      /* display: none; */
+    }
+    .banner{
+      max-width: 274px;
+      margin: 0 auto;
+    }
+    .btn-primary, .btn-secondary{
+      max-width: 169px;
+      margin: 0 auto;
+     padding: 16px 20px;
+    }
+  }
