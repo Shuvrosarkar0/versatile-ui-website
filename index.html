@@ -6,42 +6,91 @@
     <title>Versatile UI</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="inter-font">
+<body class="inter-font bg-color">
     <header class="primary-bg">
+        <div class="navbar-section">
             <nav class="navbar display-flex">
-                    <h3 class="brand">Fitness</h3>
-                    <div class="border">
-                        <ul class="nav-links display-flex">
-                            <div class="home">
-                                <li class="nav-item"><a href="" class="nav-link text-white">Home</a></li>
-                            </div>
-                            <li class="nav-item"><a href="" class="nav-link text-white">Service</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-white">Contact</a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
-                        </ul>
-                    </div>
-            </nav>
-            <div class="banner display-flex">
-                <div class="banner-content">
-                    <h1 class="banner-title text-white">Get body in <br> <span class="">shape</span> & stay <br> healthy</h1>
-                    <p class="banner-description text-dark-gray">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-                    <div class=" btn-section display-flex">
-                        <button class="btn-primary text-white">Join Club Now!</button>
-                        <button class="btn-secondary text-white">Download App</button>
-                    </div>
+                <h3 class="brand">Fitness</h3>
+                <div class="border">
+                    <ul class="nav-links display-flex">
+                        <div id="home">
+                            <li class="nav-item"><a href="" class="nav-link text-white">Home</a></li>
+                        </div>
+                        <li class="nav-item"><a href="" class="nav-link text-white">Service</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-white">Contact</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <img class="banner-image" src="images/Images 2.png" alt="">
-                    <button id="tutorial-badge">
-                        <span id="tutorial-video">350+</span>
-                        <br>
-                        <span>Video tutorial</span>
-                    </button>
+            </nav>
+        <div class="banner display-flex">
+            <div class="banner-content">
+                <h1 class="banner-title text-white">Get body in <br> <span class="">shape</span> & stay <br> healthy</h1>
+                <p class="banner-description text-dark-gray">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                <div class=" btn-section display-flex">
+                    <button class="btn-primary text-white">Join Club Now!</button>
+                    <button class="btn-secondary text-white">Download App</button>
                 </div>
             </div>
+                <img class="banner-image" src="images/Images 2.png" alt="">
+                <div>
+                    <button id="tutorial-badge">
+                            <li id="dot"></li>
+                            <span id="tutorial-videos">350+</span>
+                            <br>
+                            <span>Video tutorial</span>
+                        </button>
+                </div>
+                <div>
+                    <button id="workout-badge">
+                        <span id="workout-videos">500+</span>
+                        <br>
+                        <span>Free Workout Videos</span>
+                    </button>
+                </div>
+        </div>
+        </div>
     </header>
     <main>
-
+        <section class="habits">
+            <div class="habits-content">
+                <h4 class="habits-title text-white">Change Your Habits</h4>
+                <p class="text-dark-gray">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to  a gym.</p>
+            </div>
+            <div class="habits-card">
+                <div class="card">
+                        <img src="images/image 3.png" alt="">
+                        <div class="card-title text-white">Movement</div>
+                        <div class="card-description text-dark-gray">We believe fitness should be accessible to everyone</div>
+                </div>
+                <div class="card">
+                    <img src="images/image 2.png" alt="">
+                    <div class="card-title text-white">Time</div>
+                    <div class="card-description text-dark-gray">We believe fitness should be accessible to everyone</div>
+                </div>
+                <div class="card">
+                    <img src="images/image 4.png" alt="">
+                    <div class="card-title text-white">Practice</div>
+                    <div class="card-description text-dark-gray">We believe fitness should be accessible to everyone</div>
+                </div>
+                <div class="card">
+                    <img src="images/image 5.png" alt="">
+                    <div class="card-title text-white">Weight Loss</div>
+                    <div class="card-description text-dark-gray">We believe fitness should be accessible to everyone</div>
+                </div>
+            </div>
+        </section>
+        <!-- run an extra mile -->
+         <section class="navbar run-easily display-flex">
+            <div class="run-extra-mile">
+                <p class="run-title">Run an Extra <br> Mile Easily</p>
+                <p class="text-dark-gray run-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <button class="btn-primary">Join Now</button>
+            </div>
+    
+             <div>
+                <img class="run-img" src="images/run.jpg" alt="">
+             </div>
+         </section>
     </main>
     <footer>
 

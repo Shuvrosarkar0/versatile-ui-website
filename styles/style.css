@@ -1,3 +1,7 @@
+body{
+  background-color: black;
+  color: #FFFFFF;
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 .inter-font {
     font-family: "Inter", sans-serif;
@@ -56,13 +60,29 @@ color: rgba(255, 255, 255, 0.6);
   border: 1px solid white;
   border-radius: 46px;
 }
-  /* header styles */
 
+.text-center{
+  text-align: center;
+}
+
+main{
+  max-width: 1060px;
+  margin: 0 auto;
+}
+  /* header styles */
+.navbar-section{
+  max-width: 1060px;
+  margin: 0 auto;
+}
 
   /* navbar related styles */
   .navbar, .banner{
     justify-content: space-between;
     align-items: center;
+  }
+
+  .navbar{
+    max-width: 1060px;
   }
 
   .brand{
@@ -75,6 +95,7 @@ color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
   }
+  
   .nav-item{
     list-style: none;
     margin-right: 47px;
@@ -85,25 +106,41 @@ color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
   }
 
+#home{
+  position: static;
+  width: 52px;
+  height: 22px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 47px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px 8px 20px;
+  border-radius: 46px;
+  background-color: rgb(230, 83, 60);
+}
 
-  /* .home{
-    background-color: #E6533C;
-    border: none;
-    border-radius: 46px;
-    margin: auto 47px 0px ;
-  } */
-  .navbar, .banner{
-    max-width: 1440px;
+  .navbar{
+    max-width: 1060px;
     margin: 0 auto;
   }
 
   /* banner related styles */
   .banner{
     gap: 167px;
+    max-width: 1040px;
   }
+
+  .banner-title{
+    font-size: 5rem;
+  }
+
+
   .banner-content{
-    max-width: 599px;
-    margin: auto 0;
+    max-width: 520px;
+    margin: auto;
   }
 
   .banner-image{
@@ -115,33 +152,131 @@ color: rgba(255, 255, 255, 0.6);
     
   }
 
+  #dot{
+    font-size: 9rem;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: -48px;
+    color: #E6533C;
+  }
+
   #tutorial-badge{
-    border: none;
+    position: absolute;
+    width: 206px;
+    height: 96px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1); 
     border-radius: 12px;
     padding: 20px 23px 20px 75px;
     font-size: 1rem;
     color: rgba(239, 237, 232, 0.65);
-    background-color: rgba(48, 48, 48, 0.54);
-    margin-left: -100px;
-    margin-top: -60px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    margin-left: -630px;
+    margin-top: 130px;
   }
 
-  #tutorial-video{
+  #tutorial-videos{
     font-size: 1.5rem;
     font-weight: 700;
+    padding: 20px 63px 75px 8px;
     color: rgba(250, 250, 249, 1);
   }
 
+  #workout-badge{
+    position: absolute;
+    width: 193px;
+    height: 98px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: rgba(239, 237, 232, 0.65);
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    margin-left: -450px;
+    margin-top: -160px;
+  }
 
+  #workout-videos{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 17px 53px 41px 24px;
+    color: rgba(250, 250, 249, 1);
+  }
+
+  /* main section styles */
+
+  .habits{
+    max-width: 1440px;
+    background-color: black;
+  }
+
+  .habits-content{
+    /* max-width: 670px; */
+    /* margin: 0; */
+    text-align: center;
+  }
+
+  .habits-title, .run-title{
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .habits-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 58px;
+  }
+
+  .card{
+    width: 230px;
+    padding: 0px 23.5px 30px;
+  }
+.card-title{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 6px;
+  padding: 0px 50px 6px;
+}
+
+.card-description, .run-description{
+  font-size: 0.9rem;
+}
+
+  .card > img{
+    border-radius: 50%;
+  }
+
+  /* run an extra mile section styles */
+  .run-easily{
+    background-color: rgba(34, 34, 34, 1);
+    max-width: 1060px;
+    margin: 0 auto;
+    border-radius: 18px;
+  }
+
+  .run-extra-mile{
+    max-width: 443px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    margin-left: 54px;
+  }
+  .run-img{
+    max-width: 336px;
+    border-radius: 18px;
+    margin: 30px;
+  }
 
   /* responsive media query */
   @media screen and (max-width: 576px) {
     .navbar, .nav-links, .banner{
       flex-direction: column;
     }
-    .nav-links{
-      /* display: none; */
-    }
+    /* .nav-links{
+      display: none;
+    } */
     .banner{
       max-width: 274px;
       margin: 0 auto;
