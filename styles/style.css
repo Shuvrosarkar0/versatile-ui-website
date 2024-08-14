@@ -107,6 +107,10 @@ main{
     background-color: #E6533C;
     border-radius: 46px;
   }
+
+  .bars{
+    display: none;
+  }
   
   .nav-item{
     list-style: none;
@@ -461,16 +465,21 @@ main{
 
   /* responsive media query */
   @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .banner, .footer-container, .bmi-content{
+    .nav-links, .banner, .run-content, .footer-container, .bmi-content{
       flex-direction: column;
     }
 
     .brand{
-      margin-left: -150px;
+      margin-left: 80px;
     }
 
     .nav-option{
       display: none;
+    }
+
+    .bars{
+      display: block;
+      margin-right: 20px;
     }
 
     .primary-bg{
