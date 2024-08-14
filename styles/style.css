@@ -96,6 +96,17 @@ main{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
   }
+
+  .nav-option{
+    margin-right: 20px;
+    gap: 20px;
+  }
+
+  .span{
+    padding: 8px 20px;
+    background-color: #E6533C;
+    border-radius: 46px;
+  }
   
   .nav-item{
     list-style: none;
@@ -436,12 +447,22 @@ main{
 
   /* responsive media query */
   @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .banner, .footer-container{
+    .navbar, .nav-links, .banner, .footer-container, .bmi-content{
       flex-direction: column;
     }
-    /* .nav-links{
+
+    .brand{
+      margin-left: -150px;
+    }
+
+    .nav-option{
       display: none;
-    } */
+    }
+
+    .primary-bg{
+      margin-left: -70px;
+    }
+
     .banner{
       max-width: 274px;
       margin: 0 auto;
@@ -451,8 +472,18 @@ main{
       margin: 0 auto;
      padding: 16px 20px;
     }
+    /* habit section */
+    .habits-card{
+      margin-left: 50px;
+    }
+
+    /* bmi calculator */
+    .calculate-bmi{
+     margin-left: 30px;
+    }
+
     /* team section */
-    .team-img-container{
+    .team-img-container, .bmi-option, .habits-card{
       grid-template-columns: repeat(1, 1fr);
     }
   }
