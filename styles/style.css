@@ -451,4 +451,8 @@ main{
       margin: 0 auto;
      padding: 16px 20px;
     }
+    /* team section */
+    .team-img-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
