@@ -403,6 +403,8 @@ main{
     text-align: center;
   }
   .team-img-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -514,7 +516,8 @@ main{
       margin: 0 auto;
     }
     .habits-card{
-      margin-left: 30px;
+      margin-left: 50px;
+      /* margin: 0 auto; */
     }
     .habits-content{
       margin-right: 50px;
