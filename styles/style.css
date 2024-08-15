@@ -468,9 +468,18 @@ main{
     .nav-links, .banner, .run-content, .footer-container, .bmi-content{
       flex-direction: column;
     }
+    body{
+      max-width: 460px;
+    }
+
+    .navbar-section{
+      max-width: 393px;
+      max-height: 1310px;
+      margin-left: 20px;
+    }
 
     .brand{
-      margin-left: 80px;
+      margin-left: 60px;
     }
 
     .nav-option{
@@ -479,7 +488,6 @@ main{
 
     .bars{
       display: block;
-      margin-right: 20px;
     }
 
     .primary-bg{
@@ -490,15 +498,40 @@ main{
       max-width: 274px;
       margin: 0 auto;
     }
+
+    .banner-image{
+      margin-top: -120px;
+      margin-left: 60px;
+    }
     .btn-primary, .btn-secondary{
       max-width: 169px;
       margin: 0 auto;
      padding: 16px 20px;
     }
     /* habit section */
-    .habits-card{
-      margin-left: 50px;
+    .habits{
+      max-width: 338px;
+      margin: 0 auto;
     }
+    .habits-card{
+      margin-left: 30px;
+    }
+    .habits-content{
+      margin-right: 50px;
+    }
+
+    /* run section */
+    .run-content, .bmi-container, .bmi-content, .team-content, .footer-container{
+      max-width: 353px;
+      /* margin-right: 50px; */
+      margin: 0 auto;
+    }
+
+    .run-img, .run-extra-mile{
+      max-width: 290px;
+      /* margin: 0 auto; */
+    }
+
 
     /* bmi calculator */
     .chart-section{
